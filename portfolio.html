@@ -1,42 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ezlanding's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezlanding's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Add favicon-->
+    <!-- Fix positioning of arrows-->
+    <!-- are all certificates on there? -->
+    <!-- add repos for listed projects and make them public-->
+    <!-- Ideas for IDK column: coding experience, coding languages-->
+    <!-- Center certificates-->
+    <!-- add the dots under the certificates to indicate what # certificate you're on-->
+    <!-- make certificates and projects work on smaller aspect ratios-->
+    <!-- make repos public-->
+    <!-- 
+        Projects:
+            
+    -->
 </head>
 <body>
-	<div style="text-align: center;">
-		<img src="https://cdn-icons-png.flaticon.com/512/1096/1096028.png" width="10%" height="10%">
-		<h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-			Ezlanding's Portfolio
-		</h1>
-	</div>
-	<hr>
-	<br>
-	<div>
-		<h3 style="margin-left: 40px;">
-			Certificates:
-		</h3>
-		<ul style="list-style: none;" id="Certificates">
-			<il>
-				<img src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
-			</il>
-			<il>
-				<img src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
-			</il>
-			<il>
-				<img src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
-			</il>
-		</ul>
-	</div>
+    <div class="text centered">
+        <img src="https://cdn-icons-png.flaticon.com/512/1096/1096028.png" alt="Portfolio Icon" width="10%" height="10%">
+        <h1 style="font-size: 220%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Ezlanding's Portfolio</h1>
+    </div>
+
+    <hr style="height:5px;border:none;color:#333;background-color:#333;">
+    <br>
+    <h3 class="text centered">Certificates</h3>
+    
+    <div>
+        <div class="certificates">
+                <img src="left.svg" alt="go to previous slide" onclick="scrollPrevious()"> 
+            <div class="gallery">
+                <img class="certificate" src="CS50x (1) (1).jpg" alt="CS50x Harvard Certificate">
+                <img class="certificate" src="HarvardX CS50x Certificate - edX.jpg" alt="CS50x Edx Certificate">
+                <img class="certificate" src="Professional Certificate - edX Credentials.jpg" alt="Penn Computer Science Essentials for Software Development">
+                <img class="certificate" src="PennX SD1x Certificate - edX.jpg" alt="Penn SD1x">
+                <img class="certificate" src="PennX SD2x Certificate - edX.jpg" alt="Penn SD2x">
+                <img class="certificate" src="PennX SD3x Certificate - edX.jpg" alt="Penn SD3x">
+                <img class="certificate" src="PennX SD4x Certificate - edX.jpg" alt="Penn SD4x">
+            </div>
+            <img id="rightArrow" src="right.svg" alt="go to next slide" onclick="scrollNext()">
+        </div>
+        <div class="circles">
+            <img class="fillableCircle" src="filled-circle.png" alt="unfilled circle">
+            <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
+            <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
+            <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
+            <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
+            <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
+            <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
+        </div>
+    </div>
+
+    <br>
+    
+    <h3 class="text centered">Projects</h3>
+    
+    <ul style="list-style: none;">
+        <li><div class="project">
+                <div class="projectText">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, cupiditate atque veritatis iste labore tenetur soluta deserunt? Quis iure sed repellendus amet voluptatum nostrum, corrupti ipsam cum quam error cumque.
+                </p>
+                </div>
+                <div class="projectImage">
+                    <img  src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
+                </div>
+            </div>
+        </li>
+        <br><br>
+        <li><div class="project">
+                <div class="projectText">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, cupiditate atque veritatis iste labore tenetur soluta deserunt? Quis iure sed repellendus amet voluptatum nostrum, corrupti ipsam cum quam error cumque.
+                </p>
+                </div>
+                <div class="projectImage">
+                    <img  src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
+                </div>
+            </div>
+        </li>
+        <br><br>
+        <li><div class="project">
+                <div class="projectText">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, cupiditate atque veritatis iste labore tenetur soluta deserunt? Quis iure sed repellendus amet voluptatum nostrum, corrupti ipsam cum quam error cumque.
+                </p>
+                </div>
+                <div class="projectImage">
+                    <img  src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
+                </div>
+            </div>
+        </li>
+        <br><br>
+    </ul>
+
+    <br>
+
+    <h3 class="text centered">IDK put good name here</h3>
+    <br>
+    <ul>
+        <li>
+            <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur corrupti magnam veniam, vel sapiente recusandae id? Omnis enim vel deleniti quasi itaque consequatur, repellat tenetur dolore iusto libero odit?
+            </p>
+        </li>
+        <li>
+            <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur corrupti magnam veniam, vel sapiente recusandae id? Omnis enim vel deleniti quasi itaque consequatur, repellat tenetur dolore iusto libero odit?
+            </p>
+        </li>
+        <li>
+            <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur corrupti magnam veniam, vel sapiente recusandae id? Omnis enim vel deleniti quasi itaque consequatur, repellat tenetur dolore iusto libero odit?
+            </p>
+        </li>
+        <li>
+            <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur corrupti magnam veniam, vel sapiente recusandae id? Omnis enim vel deleniti quasi itaque consequatur, repellat tenetur dolore iusto libero odit?
+            </p>
+        </li>
+    </ul>
+
+    <br><br><br><br>
+
+    <div class="footer">
+        <p style="color: white; position: relative; top: 15px; left: 15px;">
+            100% of the code (HTML, CSS, and JavaScript) Written by Ezlanding (me)
+            <br><br>
+            Github: <a style="color: lightblue;" href="https://github.com/Ezlanding1?tab=repositories">Ezlanding's Github Page</a>
+            <br><br>
+            Discord: Ezlanding#3986
+        </p>
+    </div>
+    
+    <script src="portfolio.js"></script>
 </body>
-
-<script>
-	let certificates = document.getElementById("Certificates").getElementsByTagName("il");
-
-	console.log(certificates);
-</script>
-
 </html>

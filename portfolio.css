@@ -1,0 +1,85 @@
+.centered {
+    text-align: center;
+}
+
+.text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.certificates {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    width: 750px;
+    height: 750px;
+    display: flex;
+    margin: 0 15px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.certificate {
+    width: 150%;
+    height: 75%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#rightArrow {
+    position: relative;
+    top: 0px;
+}
+
+.circles {
+    margin-top: -175px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.fillableCircle {
+    width: 15px;
+    height: 15px;
+}
+
+.project {
+    margin: auto;
+    height: 400px;
+    width: 90%;
+    outline: 2px solid blue;
+    content: flex;
+}
+
+.projectText {
+    position: relative;
+    top: 5px;
+    left: 50px;
+    width: 30%;
+    float: left;
+}
+
+.projectImage {
+    position: relative;
+    top: 5px;
+    left: 50px;
+    content: flex;
+    width: 50%;
+    float: right;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: #2B2B2B;
+}
