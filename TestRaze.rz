@@ -1,0 +1,13 @@
+function Main(){
+    T t = new T("Hello, World!");
+
+    Print(t.context);
+}
+
+class T {
+    string context = "";
+
+    function T(string _context) {
+        context = _context;
+    }
+}

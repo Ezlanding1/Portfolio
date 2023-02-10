@@ -12,15 +12,13 @@
     <!-- add repos for listed projects and make them public-->
     <!-- Ideas for IDK column: coding experience, coding languages-->
     <!-- Center certificates-->
-    <!-- add the dots under the certificates to indicate what # certificate you're on-->
     <!-- make certificates and projects work on smaller aspect ratios-->
     <!-- make repos public-->
     <!-- make exp image styles (in portfolio.js) have px size and not % size?-->
-    <!-- 
-        Projects:
-            
-    -->
     <!-- add max and min length, in px, of experience images-->
+    <!-- get midi-piano dwnld link working-->
+    <!-- add max size-->
+    <!-- fix certificates on mobile-->
 </head>
 <body>
     <div class="text centered">
@@ -58,22 +56,45 @@
     </div>
 
     <br>
-    
+    <br>
+
     <h3 class="text centered">Projects</h3>
     
     <ul style="list-style: none;">
         <li><div class="project">
                 <div class="projectText">
-                <h3>
-                    <b>
-                        Project Title
-                    </b>
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, cupiditate atque veritatis iste labore tenetur soluta deserunt? Quis iure sed repellendus amet voluptatum nostrum, corrupti ipsam cum quam error cumque.
-                </p>
+                    <h3>
+                        <b>
+                            The Raze Programming Language
+                        </b>
+                    </h3>
+                    <p>
+                        Raze is a Compiled, Object Oriented, Statically & Strictly typed toy programming language that combines all the intuitive features from languages such as C, C#, and Python into a neat syntax, while also offering access to lower level programming.
+                        <br><br><br><br><br>
+                        <a style = "float: bottom" href="https://github.com/Ezlanding1/Raze">The Raze Programming Language Github Page</a>
+                    </p>
+                    <br><br><br>
                 </div>
-                    <img class="projectImage"  src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
+                    <img style="border-radius: 15px;" class="projectImage" src="RazeCodeSample.png">
+            </div>
+        </li>
+        <br><br>
+        <li><div class="project">
+                <div class="projectText">
+                    <h3>
+                        <b>
+                            MIDI-Piano
+                        </b>
+                    </h3>
+                    <p>
+                        A Unity project that plays MIDI files dynamically on a virtual piano with moving keys. The first step is parsing the input MIDI file and extracting its infomation, such as the speed, frequency, and duration of each note. Then, the project uses advanced and low-level utilization of Unity's AudioSource Component to play sine waves at the frequency of the corresponding note. Finally, at the press of each note, a grand piano rendered in the HDRP, that was custom modeled in Blender reacts to the press of the note, responding to factors such as the volume of the note, the pitch of the note, and how hard the note was pressed. 
+                    </p>
+                    <br><br>
+                    <a style = "float: bottom" href="https://github.com/Ezlanding1/MIDI-Piano">MIDI-Piano Github Page</a> <br><br>
+                    <a style = "float: bottom" href="">Download The Program Here</a>
+                    <br><br><br>
+                </div>
+                    <div style="outline: 6px solid black; border-radius: 15px; overflow: hidden;" class="projectImage"> <iframe src="Virtual Piano 2023-02-08 23-44-52.mp4"></iframe></div>
             </div>
         </li>
         <br><br>
@@ -81,57 +102,118 @@
                 <div class="projectText">
                 <h3>
                     <b>
-                        Project Title
+                        Ghost-Shooter (VR) -- find better name --
                     </b>
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, cupiditate atque veritatis iste labore tenetur soluta deserunt? Quis iure sed repellendus amet voluptatum nostrum, corrupti ipsam cum quam error cumque.
+                    A Virtual Reality game created in the unity game engine. In this Game, you must shoot an evil ghost while also using your blaster to shatter everyday objects that have been possesed by the ghost. Watch out! The ghost is a complex state machine and can react to your every move, and it speeds up at low health. This game uses the XR interaction toolkit, advanced use of Unity's VFX system, and complex state machines.
                 </p>
+                <br><br><br>
                 </div>
                     <img class="projectImage"  src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
-            </div>
+            
+                </div>
         </li>
         <br><br>
         <li><div class="project">
-                <div class="projectText">
-                <h3>
-                    <b>
-                        Project Title
-                    </b>
-                </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, cupiditate atque veritatis iste labore tenetur soluta deserunt? Quis iure sed repellendus amet voluptatum nostrum, corrupti ipsam cum quam error cumque.
-                </p>
-                </div>
-                    <img class="projectImage"  src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
-            </div>
-        </li>
+            <div class="projectText">
+            <h3>
+                <b>
+                    Boilerplate Autofiller
+                </b>
+            </h3>
+            <p>
+                The Boilerplate-Autofiller VSCode Extension<br><br>
+                A Visual Studio Code Extension for Autofilling Boilerplates of popular coding languages<br><br>
+                Features:<br><br>
+                Instantly paste in the boilerplate for many different languages<br><br>
+
+                Includes Boilerplate Options for:<br><br>
+
+                    C#<br>
+                    Python<br>
+                    C<br>
+                    C++<br>
+                    Java<br>
+                    HTML<br>
+                    The USACO Boilerplate<br><br>
+            </p>
+            <p style="font-family: 'Courier New', Courier, monospace">Install Command:<br> ext install EZL.boilerplate-autofiller</p>
+            <a href="https://github.com/Ezlanding1/Boilerplate-Autofiller">Boilerplate-Autofiller Github Page</a><br><br>
+            <a href="https://marketplace.visualstudio.com/items?itemName=EZL.boilerplate-autofiller">VsCode marketplace Page</a><br><br><br>
+        </div>
+        <img class="projectImage" src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
+    </div>
+</li>
         <br><br>
     </ul>
 
     <br>
 
-    <h3 class="text centered">IDK put good name here</h3>
+    <h3 class="text centered">Experience</h3>
     <br>
     <ul>
         <li>
             <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur corrupti magnam veniam, vel sapiente recusandae id? Omnis enim vel deleniti quasi itaque consequatur, repellat tenetur dolore iusto libero odit?
+                More Than X years of programming 
             </p>
         </li>
         <li>
             <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur corrupti magnam veniam, vel sapiente recusandae id? Omnis enim vel deleniti quasi itaque consequatur, repellat tenetur dolore iusto libero odit?
+                More Than X Years of
+                <img style="vertical-align:middle; height: 2.5%; width: 2.5%;" src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" alt="C#"> 
+                and 
+                <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://preview.redd.it/tu3gt6ysfxq71.png?auto=webp&s=10ab55d9dc09e7ed6ea59bd5916800a5272d5969" alt="C#">
+                Development
             </p>
         </li>
         <li>
             <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur corrupti magnam veniam, vel sapiente recusandae id? Omnis enim vel deleniti quasi itaque consequatur, repellat tenetur dolore iusto libero odit?
+                Comfortable with low-level (
+                    <img style="height: 5%; width: 5%; vertical-align:middle;" src="data:image/png;base64,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" alt="Assembly">,
+                    <img style="height: 3.5%; width: 3.5%; vertical-align:middle;" src="https://raw.githubusercontent.com/github/explore/f3e22f0dca2be955676bc70d6214b95b13354ee8/topics/c/c.png" alt="C">
+                ), 
+                high-level (
+                    <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python">,
+                    <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" alt="C++">
+                ), 
+                functional (
+                    <img style="height: 3.5%; width: 3.5%; vertical-align:middle" src="https://global-uploads.webflow.com/6047a9e35e5dc54ac86ddd90/63064c5652d40eda2eb7a838_33ac2334.png" alt="Haskell">), and 
+                OOP languages (
+                    <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" alt="C#">
+                )
+
             </p>
         </li>
         <li>
             <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis consectetur corrupti magnam veniam, vel sapiente recusandae id? Omnis enim vel deleniti quasi itaque consequatur, repellat tenetur dolore iusto libero odit?
+                Skilled with the technologies used by programmers, such as:
+                Git
+                    <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git">,
+                VsCode
+                    <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519" alt="VsCode">,
+                Visual-Studio
+                    <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_Icon_2022.svg" alt="Visual-Studio">,
+                Regex
+                    <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/OOjs_UI_icon_regular-expression-progressive.svg/120px-OOjs_UI_icon_regular-expression-progressive.svg.png" alt="Regex">,
+                Vim 
+                    <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1022px-Vimlogo.svg.png" alt="Vim">,
+                and Linux
+                    <img style="height: 3%; width: 3%; vertical-align:middle;" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Linux_logo.jpg" alt="Linux">
+            </p>
+        </li>
+        <li>
+            <p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Versed In: <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Advanced Algorithms and Data Structures<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Web Development<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Software Development<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Game Development<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Virtual and Augmented Reality<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Internet of Things (IoT)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Robotics and Automation<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Music Technology and Audio Engineering<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Digital Art and Animation<br>
             </p>
         </li>
     </ul>
@@ -143,10 +225,10 @@
 
     <br><br>
     <h3 class="text centered">
-        About
+        About Me
     </h3>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum nesciunt nulla iusto nobis. Ipsam voluptas, fugit beatae recusandae, sint quisquam dolores fuga nam qui perspiciatis harum sequi ut odio. Veritatis incidunt magni suscipit minus eius doloribus minima labore qui fugiat, ullam neque cum eum, sapiente explicabo ab nobis quidem error!
+    <p class="text" style="font-size: large; max-width: 90%; margin-left: 1%">
+        &nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm Ezra Landa. I am a high school student residing in the United States and I am incredibly passionate about programming. I have been programming for several years now and have accumulated a multitude of achievements in the field. It has become my greatest passion and I am continuously seeking new challenges and opportunities to improve my skills. I especially enjoy backend development and algorithms. I love to create my own projects, collab with others, and compete. 
     </p>
     <br><br><br><br>
 
