@@ -57,7 +57,8 @@
     margin: auto;
     height: 400px;
     width: 90%;
-    outline: 2px solid blue;
+    outline: 2px solid black;
+    border-radius: 40px;
     content: flex;
 }
 
@@ -65,21 +66,42 @@
     position: relative;
     top: 5px;
     left: 50px;
-    width: 30%;
+    max-width: 30%;
     float: left;
 }
 
 .projectImage {
-    position: relative;
     top: 5px;
     left: 50px;
-    content: flex;
     width: 50%;
+    max-width: 100%;
+    max-height: 100%;
     float: right;
+    object-fit: contain;
+}
+
+.experience {
+    margin: auto;
+    outline: 3px solid gray;
+    content: flex;
 }
 
 .footer {
     height: 200px;
     width: 100%;
     background-color: #2B2B2B;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 5s;
 }
