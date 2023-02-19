@@ -20,35 +20,69 @@ var expDOMImgs = []
 var fadeInPlayed = false;
 initialize();
 
-var scroll = 0;
+var cScroll = 0;
+var pScroll = 0;
 
 var certificates = document.getElementsByClassName("certificates")[0].getElementsByClassName("gallery")[0].getElementsByTagName("img");
 console.log(certificates);
 
-var fillableCircles = document.getElementsByClassName("circles")[0].getElementsByTagName("img");
-console.log(fillableCircles);
+var certFillableCircles = document.getElementsByClassName("circles")[0].getElementsByTagName("img");
+console.log(certFillableCircles);
 
-if (fillableCircles.length != certificates.length){
-    console.error("Size of cicles does not match size of certificates");
+var projects = document.getElementsByClassName("projects")[0].getElementsByClassName("gallery")[0].getElementsByClassName("project");
+console.log(certificates);
+
+var projFillableCircles = document.getElementsByClassName("circles")[1].getElementsByTagName("img");
+console.log(projFillableCircles);
+
+if (certFillableCircles.length != certificates.length){
+    console.error("Size of circles does not match size of certificates");
+}
+
+if (projFillableCircles.length != projects.length){
+    console.log(projFillableCircles.length, projects.length);
+    console.error("Size of circles does not match size of projects");
 }
 
 function scrollNext() {
 
-    fillableCircles[scroll].src = "unfilled-circle.png";
-    if (scroll < certificates.length-1)
-        scroll++;
+    certFillableCircles[cScroll].src = "unfilled-circle.png";
+    if (cScroll < certificates.length-1)
+        cScroll++;
 
-    document.querySelector(".gallery").scrollLeft = certificates[scroll].width * scroll;
-    fillableCircles[scroll].src = "filled-circle.png";
+    document.getElementsByClassName("certificates")[0].getElementsByClassName("gallery")[0].scrollLeft = certificates[cScroll].width * cScroll;
+    certFillableCircles[cScroll].src = "filled-circle.png";
 }
 
 function scrollPrevious() {
 
-    fillableCircles[scroll].src = "unfilled-circle.png";
-    if (scroll > 0)
-        scroll--;
-    document.querySelector(".gallery").scrollLeft = certificates[scroll].width * scroll;
-    fillableCircles[scroll].src = "filled-circle.png";
+    certFillableCircles[cScroll].src = "unfilled-circle.png";
+    if (cScroll > 0)
+        cScroll--;
+    let gallery = document.getElementsByClassName("certificates")[0].getElementsByClassName("gallery")[0];
+    gallery.scrollLeft = certificates[cScroll].width * cScroll;
+    certFillableCircles[cScroll].src = "filled-circle.png";
+}
+
+function pScrollNext() {
+
+    projFillableCircles[pScroll].src = "unfilled-circle.png";
+    if (pScroll < projects.length-1)
+        pScroll++;
+
+    let gallery = document.getElementsByClassName("projects")[0].querySelector(".gallery");
+    gallery.scrollLeft = projects[pScroll].clientWidth * pScroll * 1.1;
+    projFillableCircles[pScroll].src = "filled-circle.png";
+}
+
+function pScrollPrevious() {
+
+    projFillableCircles[pScroll].src = "unfilled-circle.png";
+    if (pScroll > 0)
+        pScroll--;
+    let gallery = document.getElementsByClassName("projects")[0].querySelector(".gallery");
+    gallery.scrollLeft = projects[pScroll].clientWidth * pScroll * 1.1;
+    projFillableCircles[pScroll].src = "filled-circle.png";
 }
 
 function initialize(){

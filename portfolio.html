@@ -30,10 +30,11 @@
     <br>
     <h3 class="text centered">Certificates</h3>
     
+    
     <div>
         <div class="certificates">
                 <img src="left.svg" alt="go to previous slide" onclick="scrollPrevious()"> 
-            <div class="gallery">
+            <div style="max-width: 750px; max-height: 750px;" class="gallery">
                 <img class="certificate" src="CS50x (1) (1).jpg" alt="CS50x Harvard Certificate">
                 <img class="certificate" src="HarvardX CS50x Certificate - edX.jpg" alt="CS50x Edx Certificate">
                 <img class="certificate" src="Professional Certificate - edX Credentials.jpg" alt="Penn Computer Science Essentials for Software Development">
@@ -54,101 +55,129 @@
             <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
         </div>
     </div>
-
-    <br>
-    <br>
+    
+    <br><br><br><br><br>
 
     <h3 class="text centered">Projects</h3>
-    
-    <ul style="list-style: none;">
-        <li><div class="project">
-                <div class="projectText">
-                    <h3>
-                        <b>
-                            The Raze Programming Language
-                        </b>
-                    </h3>
-                    <p>
-                        Raze is a Compiled, Object Oriented, Statically & Strictly typed toy programming language that combines all the intuitive features from languages such as C, C#, and Python into a neat syntax, while also offering access to lower level programming.
-                        <br><br><br><br><br>
-                        <a style = "float: bottom" href="https://github.com/Ezlanding1/Raze">The Raze Programming Language Github Page</a>
-                    </p>
-                    <br><br><br>
-                </div>
-                    <img style="border-radius: 15px;" class="projectImage" src="RazeCodeSample.png">
-            </div>
-        </li>
-        <br><br>
-        <li><div class="project">
-                <div class="projectText">
-                    <h3>
-                        <b>
-                            MIDI-Piano
-                        </b>
-                    </h3>
-                    <p>
-                        A Unity project that plays MIDI files dynamically on a virtual piano with moving keys. The first step is parsing the input MIDI file and extracting its infomation, such as the speed, frequency, and duration of each note. Then, the project uses advanced and low-level utilization of Unity's AudioSource Component to play sine waves at the frequency of the corresponding note. Finally, at the press of each note, a grand piano rendered in the HDRP, that was custom modeled in Blender reacts to the press of the note, responding to factors such as the volume of the note, the pitch of the note, and how hard the note was pressed. 
-                    </p>
-                    <br><br>
-                    <a style = "float: bottom" href="https://github.com/Ezlanding1/MIDI-Piano">MIDI-Piano Github Page</a> <br><br>
-                    <a style = "float: bottom" href="">Download The Program Here</a>
-                    <br><br><br>
-                </div>
-                    <div style="outline: 6px solid black; border-radius: 15px; overflow: hidden;" class="projectImage"> <iframe src="Virtual Piano 2023-02-08 23-44-52.mp4"></iframe></div>
-            </div>
-        </li>
-        <br><br>
-        <li><div class="project">
-                <div class="projectText">
-                <h3>
-                    <b>
-                        Ghost-Shooter (VR) -- find better name --
-                    </b>
-                </h3>
-                <p>
-                    A Virtual Reality game created in the unity game engine. In this Game, you must shoot an evil ghost while also using your blaster to shatter everyday objects that have been possesed by the ghost. Watch out! The ghost is a complex state machine and can react to your every move, and it speeds up at low health. This game uses the XR interaction toolkit, advanced use of Unity's VFX system, and complex state machines.
-                </p>
-                <br><br><br>
-                </div>
-                    <img class="projectImage"  src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
-            
-                </div>
-        </li>
-        <br><br>
-        <li><div class="project">
-            <div class="projectText">
-            <h3>
-                <b>
-                    Boilerplate Autofiller
-                </b>
-            </h3>
-            <p>
-                The Boilerplate-Autofiller VSCode Extension<br><br>
-                A Visual Studio Code Extension for Autofilling Boilerplates of popular coding languages<br><br>
-                Features:<br><br>
-                Instantly paste in the boilerplate for many different languages<br><br>
+    <div>
+        <div class="projects">
+            <img src="left.svg" alt="go to previous slide" onclick="pScrollPrevious()"> 
+            <div style="max-width: 900px;" class="gallery">
 
-                Includes Boilerplate Options for:<br><br>
+                <div class="project">
+                    <div class="projectText">
+                        <div style="margin: auto; width: 90%;" class="padding">
+                            <h3 class="centered">
+                                <b>
+                                    The Raze Programming Language
+                                </b>
+                            </h3>
+                            <p>
+                                Raze is a Compiled, Object Oriented, Statically & Strictly typed toy programming language that combines all the intuitive features from languages such as C, C#, and Python into a neat syntax, while also offering access to lower level programming.
+                                <br><br><br><br><br>
+                                <a style = "float: bottom" href="https://github.com/Ezlanding1/Raze">The Raze Programming Language Github Page</a>
+                            </p>
+                            <br><br><br>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="margin: auto auto; height: 90%; width: 90%;">
+                            <img class="projectImage" src="RazeCodeSample.png">
+                        </div>
+                    </div>
+                </div>
 
-                    C#<br>
-                    Python<br>
-                    C<br>
-                    C++<br>
-                    Java<br>
-                    HTML<br>
-                    The USACO Boilerplate<br><br>
-            </p>
-            <p style="font-family: 'Courier New', Courier, monospace">Install Command:<br> ext install EZL.boilerplate-autofiller</p>
-            <a href="https://github.com/Ezlanding1/Boilerplate-Autofiller">Boilerplate-Autofiller Github Page</a><br><br>
-            <a href="https://marketplace.visualstudio.com/items?itemName=EZL.boilerplate-autofiller">VsCode marketplace Page</a><br><br><br>
+                <div class="project">
+                    <div class="projectText">
+                        <div style="margin: auto; width: 90%;" class="padding">
+                            <h3 class="centered">
+                                <b>
+                                    MIDI-Piano
+                                </b>
+                            </h3>
+                            <p>
+                                A Unity project that plays MIDI files dynamically on a virtual piano with moving keys. The first step is parsing the input MIDI file and extracting its infomation, such as the speed, frequency, and duration of each note. Then, the project uses advanced and low-level utilization of Unity's AudioSource Component to play sine waves at the frequency of the corresponding note. Finally, at the press of each note, a grand piano rendered in the HDRP, that was custom modeled in Blender reacts to the press of the note, responding to factors such as the volume of the note, the pitch of the note, and how hard the note was pressed. 
+                                <br><br><br><br><br>
+                                <a style = "float: bottom" href="https://github.com/Ezlanding1/MIDI-Piano">MIDI-Piano Github Page</a> <br><br>
+                                <a style = "float: bottom" href="">Download The Program Here</a>
+                            </p>
+                            <br><br><br>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="margin: auto auto; height: 90%; width: 90%;">
+                            <iframe class="projectVideo" src="Virtual Piano 2023-02-08 23-44-52.mp4"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="projectText">
+                        <div style="margin: auto; width: 90%;" class="padding">
+                            <h3 class="centered">
+                                <b>
+                                    Ghost-Shooter (VR) -- find better name --
+                                </b>
+                            </h3>
+                            <p>
+                                A Virtual Reality game created in the unity game engine. In this Game, you must shoot an evil ghost while also using your blaster to shatter everyday objects that have been possesed by the ghost. Watch out! The ghost is a complex state machine and can react to your every move, and it speeds up at low health. This game uses the XR interaction toolkit, advanced use of Unity's VFX system, and complex state machines.
+                                <br><br><br><br><br>
+                                <a style = "float: bottom" href="">Ghost-Shooter Github Page</a> <br><br>
+                            </p>
+                            <br><br><br>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="margin: auto auto; height: 90%; width: 90%;">
+                            <img class="projectImage" src="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="projectText">
+                        <div style="margin: auto; width: 90%;" class="padding">
+                            <h3 class="centered">
+                                <b>
+                                    Boilerplate Autofiller
+                                </b>
+                            </h3>
+                            <p>
+                                The Boilerplate-Autofiller VSCode Extension<br>
+                                A Visual Studio Code Extension for Autofilling Boilerplates of popular coding languages<br><br>
+                                Instantly paste in the boilerplate for many different languages<br><br>
+                
+                                Includes Boilerplate Options for:<br><br>
+                
+                                    C#, Python, C, C++, Java, HTML, USACO, and More!<br><br>
+                                    <br>
+                                </p>
+                            <p style="font-family: 'Courier New', Courier, monospace">Install Command:<br> ext install EZL.boilerplate-autofiller</p>
+                            <a href="https://github.com/Ezlanding1/Boilerplate-Autofiller">Boilerplate-Autofiller Github Page</a><br><br>
+                            <a href="https://marketplace.visualstudio.com/items?itemName=EZL.boilerplate-autofiller">VsCode marketplace Page</a><br><br><br>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="margin: auto auto; height: 90%; width: 90%;">
+                            <iframe class="projectVideo" src="BoilerplateAutofillerVideo.mp4"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <img id="rightArrow" src="right.svg" alt="go to next slide" onclick="pScrollNext()">
         </div>
-        <img class="projectImage" src="https://sienaconstruction.com/wp-content/uploads/2017/05/test-image.jpg">
+        <div class="circles">
+            <img class="fillableCircle" src="filled-circle.png" alt="unfilled circle">
+            <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
+            <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
+            <img class="fillableCircle" src="unfilled-circle.png" alt="unfilled circle">
+        </div>
     </div>
-</li>
-        <br><br>
-    </ul>
+    
 
-    <br>
+    <br><br><br><br><br>
+
 
     <h3 class="text centered">Experience</h3>
     <br>
