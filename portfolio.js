@@ -23,6 +23,9 @@ initialize();
 var cScroll = 0;
 var pScroll = 0;
 
+const UNFILLED_CIRCLE = "Portfolio/unfilled-circle.png";
+const FILLED_CIRCLE = "Portfolio/filled-circle.png";
+
 var certificates = document.getElementsByClassName("certificates")[0].getElementsByClassName("gallery")[0].getElementsByTagName("img");
 console.log(certificates);
 
@@ -46,43 +49,43 @@ if (projFillableCircles.length != projects.length){
 
 function scrollNext() {
 
-    certFillableCircles[cScroll].src = "unfilled-circle.png";
+    certFillableCircles[cScroll].src = UNFILLED_CIRCLE;
     if (cScroll < certificates.length-1)
         cScroll++;
 
     document.getElementsByClassName("certificates")[0].getElementsByClassName("gallery")[0].scrollLeft = certificates[cScroll].width * cScroll;
-    certFillableCircles[cScroll].src = "filled-circle.png";
+    certFillableCircles[cScroll].src = FILLED_CIRCLE;
 }
 
 function scrollPrevious() {
 
-    certFillableCircles[cScroll].src = "unfilled-circle.png";
+    certFillableCircles[cScroll].src = UNFILLED_CIRCLE;
     if (cScroll > 0)
         cScroll--;
     let gallery = document.getElementsByClassName("certificates")[0].getElementsByClassName("gallery")[0];
     gallery.scrollLeft = certificates[cScroll].width * cScroll;
-    certFillableCircles[cScroll].src = "filled-circle.png";
+    certFillableCircles[cScroll].src = FILLED_CIRCLE;
 }
 
 function pScrollNext() {
 
-    projFillableCircles[pScroll].src = "unfilled-circle.png";
+    projFillableCircles[pScroll].src = UNFILLED_CIRCLE;
     if (pScroll < projects.length-1)
         pScroll++;
 
     let gallery = document.getElementsByClassName("projects")[0].querySelector(".gallery");
-    gallery.scrollLeft = projects[pScroll].clientWidth * pScroll * 1.1;
-    projFillableCircles[pScroll].src = "filled-circle.png";
+    gallery.scrollLeft = projects[pScroll].clientWidth * pScroll;
+    projFillableCircles[pScroll].src = FILLED_CIRCLE;
 }
 
 function pScrollPrevious() {
 
-    projFillableCircles[pScroll].src = "unfilled-circle.png";
+    projFillableCircles[pScroll].src = UNFILLED_CIRCLE;
     if (pScroll > 0)
         pScroll--;
     let gallery = document.getElementsByClassName("projects")[0].querySelector(".gallery");
-    gallery.scrollLeft = projects[pScroll].clientWidth * pScroll * 1.1;
-    projFillableCircles[pScroll].src = "filled-circle.png";
+    gallery.scrollLeft = projects[pScroll].clientWidth * pScroll;
+    projFillableCircles[pScroll].src = FILLED_CIRCLE;
 }
 
 function initialize(){

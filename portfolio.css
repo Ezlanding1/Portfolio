@@ -53,23 +53,36 @@
 
 .project {
     flex: 0 0 auto;
+    align-self: center;
+    overflow: hidden; /* just in case */
+    width: 100%;
+}
+
+.projectPadding {
     border: 2px solid black;
     border-radius: 40px;
-    margin-left: 4%;
-    margin-right: 5%;
-    align-self: center;
     width: 95%;
-    overflow: hidden; /* just in case */
-
+    height: 95%;
+    margin: auto;
 }
 
 .projectText {
     width: 100%;
 }
 
-.projectVideo,
+.projectVideo {
+    outline: 5px solid black;
+    border-radius: 30px;
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
 .projectImage {
-    border: 5px solid black;
+    outline: 5px solid black;
     border-radius: 30px;
     max-width: 100%;
     max-height: 100%;
